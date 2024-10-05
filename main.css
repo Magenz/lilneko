@@ -1,0 +1,158 @@
+.workbench {
+    padding: 5px;
+}
+
+.title {
+    height: 40px !important;
+}
+
+body {
+    font-family: Verdana;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.buttonSettings {
+    outline: none;
+    color: #DAA06D; /* Custom text color */
+    padding: 1em;
+    padding-left: 3em; /* Padding for left and right */
+    padding-right: 3em;
+    border: 2px dashed #DAA06D; /* Dashed border */
+    border-radius: 15px; /* Rounded corners */
+    background-color: #EADDCA; /* Custom background color */
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5); /* Custom shadow */
+    transition: .1s ease-in-out, .4s color; /* Transition effects */
+  }
+  
+  .buttonSettings:active {
+    transform: translateX(0.1em) translateY(0.1em); /* Button press effect */
+    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5); /* Updated shadow */
+  }
+  
+/* Global styles for dropdowns (select elements) */
+select {
+    width: 150px; /* Fixed width for smaller dropdown */
+    padding: 0.2em; /* Reduced padding for a more compact appearance */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 4px; /* Slightly rounded corners */
+    background-color: #f8f8fd; /* Light background color */
+    color: #333; /* Text color */
+    font-size: 0.75rem; /* Smaller font size */
+    appearance: none; /* Remove default dropdown arrow */
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%234CAF50"%3E%3Cpath d="M7 10l5 5 5-5H7z"/%3E%3C/svg%3E'); /* Custom arrow */
+    background-repeat: no-repeat; /* Prevent multiple arrows */
+    background-position: right 10px center; /* Position the arrow */
+    background-size: 0.75em; /* Smaller size of the arrow */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Styles for dropdowns on focus */
+select:focus {
+    outline: none; /* Remove default outline */
+    border-color: #1f35ff; /* Change border color on focus */
+}
+
+/* Styles for disabled dropdowns */
+select:disabled {
+    background-color: #e0e0e0; /* Grey background for disabled state */
+    color: #999; /* Grey text for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+
+
+
+/* Global button styles only for buttons inside #workbench */
+#workbench button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 0.5em 1em; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 0.875rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    margin-bottom: 5px;
+}
+
+/* Change background color on hover */
+#workbench button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Styles for disabled buttons */
+#workbench button:disabled {
+    background-color: #e0e0e0; /* Grey background for disabled state */
+    color: #999; /* Grey text for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+
+
+#workbench input {
+    width: 20%;
+    padding: 4px; /* Reduced padding for smaller input size */
+    margin: 4px 0;
+    box-sizing: border-box;
+    border: 2px solid #8b93f8;
+    border-radius: 4px;
+    font-size: 12px; /* Smaller font size */
+}
+
+/* For medium screens (tablets) */
+@media (min-width: 768px) {
+    #workbench input {
+        width: 10%;
+    }
+}
+
+/* For large screens (desktops) */
+@media (min-width: 1024px) {
+    #workbench input {
+        width: 10%;
+    }
+}
+
+/* For extra-large screens */
+@media (min-width: 1280px) {
+    #workbench input {
+        width: 10%;
+    }
+}
+

@@ -1,4 +1,3 @@
-
 const MAX_STEPS = 20;
 const BONUS_STEPS = 9;
 const SLOTS = 8;
@@ -722,6 +721,7 @@ class Stat {
         const repeat = `<button id="repeat_button" onclick="App.getCurrent().repeat()" disabled>Repeat</button>`;
         const undo = `<button onclick="App.getCurrent().undo()" disabled id="undo_button">Undo</button>`;
         const redo = `<button onclick="App.getCurrent().redo()" disabled id="redo_button">Redo</button>`;
+        
 
         const display = `<table><tr><td style="text-align: center" id='potential_display'>Potential: ${potential}</td></tr><tr><td>${buffer}</td></tr><tr><td style="text-align: center" id="success_rate_display">Success Rate: ${this.getSuccessRate()}%</td></tr><tr><td style="text-align: center">${confirm} ${repeat} ${undo} ${redo}</td></tr></table>`;
         document.getElementById('workspace').innerHTML = display;
